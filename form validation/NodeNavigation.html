@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div">
+        <h1 id="idm">Surya</h1><h1 id="idm1">SuryaRaj</h1>
+    </div>
+</body>
+</html>
+<script>
+      let a = document.getElementById('idm');
+      console.log(a.parentNode.nodeName);     
+      let b = document.getElementById('div');
+    console.log(b.childNodes.length);
+    console.log(a.nextSibling.innerHTML);
+
+    let c = document.getElementById('idm1');
+    console.log(c.previousSibling.innerHTML);
+
+
+    
+</script>

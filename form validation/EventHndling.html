@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="lod()"  onresize="ree()">
+    <button onclick="SingleClicck()">click me</button>
+    <button ondblclick="dbclic()">clikc me 2</button>
+
+    <p onmousedown="MOuseDown()" onmouseup="MouseUp()" onmouseover="MouseOver()" onmousemove="MouseMove()" onmouseout="MouseOUt()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, similique!</p>
+
+
+    <input type="text" onkeydown="KeyDown()" onkeyup="KeyUp()" onkeypress="KeyPress()">
+<br><br>
+<h2>form event..</h2>
+
+    <form onsubmit="h()" onreset="RE()">
+        <input type="text" onfocus="Fu()" id="Name" onblur="Blu()">
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+
+<select name="" id="home" onchange="Change()">
+    <option value="BMW">BMW</option>
+    <option value="Audi">Audi</option>
+    <option value="KIA">Kia</option>
+    <option value="ss">ss</option>
+</select>
+
+
+<input type="text" oncut="Ct()"  value="surya">
+<input type="text"  oncopy="Cp()" value="surya">
+<input type="text" onpaste="pt()">
+
+
+
+        <div onscroll="scr()">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsum sint nobis maxime quos dolorum, quasi fugit velit sed unde facilis, voluptatem reiciendis perspiciatis aliquid totam vitae ipsa. Sed doloremque hic, aliquid dolores quod eius consectetur reiciendis voluptatem blanditiis sapiente reprehenderit cupiditate. Dignissimos adipisci illum et unde mollitia laboriosam eaque est labore quia distinctio doloribus vero dicta, voluptate, nesciunt aliquam aperiam doloremque quibusdam tempore ratione. At aperiam illo ipsum. Labore iusto beatae quasi necessitatibus pariatur enim explicabo suscipit quae deserunt voluptatem. Laboriosam optio odio saepe cupiditate quis! Corrupti voluptas facere ullam beatae saepe autem dicta modi possimus, quasi veniam. Eos!
+        </div>
+
+
+
+
+<style>
+    div{
+        width: 200px;
+        height: 100px;
+        overflow: scroll;
+
+    }
+</style>
+
+</body>
+</html>
+
+<script>
+            let obj = {
+                name:"suryraj",
+                age:21
+            }
+
+            obj.name = "thiru";
+
+
+            console.log(obj);
+
+
+
+
+            class One{
+                add(){
+                    console.log("runing..1");
+                }
+
+            }
+            class Two extends One{
+                add(){
+                    console.log("runing...2");
+                }
+            }
+
+            class Three extends two{
+                add(){
+                    console.log("runing..3");
+                }
+            }
+
+
+            const a1 = new One();
+            const a2 = new Two();
+            const a3 = new Three();
+
+            a1.add();
+            a2.add();
+            a3.add();
+
+
+            
+            
+
+
+
+
+
+    function scr(){
+        console.log("scroling.c.");
+    }
+
+    function lod(){
+        // alert('runing..')
+    }
+    function ree(){
+        console.log("resized..");
+    }
+
+function Ct(){
+    console.log("cutedd...");
+}
+
+function Cp(){
+    console.log("copied...");
+}
+function pt(){
+    console.log('pated..');
+}
+
+    function SingleClicck(){
+        console.log("hello");
+    }
+    function dbclic(){
+        console.log("dd");
+    }
+    function MOuseDown(){
+        console.log("runing..");
+    }
+    function MouseUp(){
+        console.log("MOuseUpp...");
+    }
+    function MouseOver(){
+        console.log("Over...");
+    }
+    function MouseMove(){
+        console.log("moveing...");
+    }
+    function MouseOUt(){
+        console.log("mouseOut...");
+    }
+    function KeyUp(){
+        console.log("key isup...");
+    }
+
+function KeyDown(){
+    console.log("Key is Down..");
+}
+function KeyPress(){
+    console.log("key is press...");
+}
+function h(){
+    alert('data submited....')
+}
+function RE(){
+    console.log("reseted..");
+}
+
+let a= document.getElementById('home')
+function Change(){
+    console.log(a.value);
+}
+
+let  b = document.getElementById('Name');
+
+function Fu(){
+    b.style.backgroundColor='yellow'
+}
+
+function Blu(){
+    b.style.backgroundColor='red'
+}
+
+
+</script>

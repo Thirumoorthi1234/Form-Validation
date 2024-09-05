@@ -1,0 +1,24 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    background-color:pink;
+    padding: 50px;
+    width:100px;
+    height: 80px;
+}
+.btn{
+    padding:10px;
+    height:auto;
+    width: auto;
+    color: blue;
+}

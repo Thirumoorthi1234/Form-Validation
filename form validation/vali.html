@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix formvalidation</title>
+    <link rel="stylesheet" href="vali.css">
+</head>
+<body>
+    <div class="continer">
+        <form id="signupForm" class="signupForm"  autocomplete="off">
+            <h1 class="sign">Sign In</h1>
+
+            <input type="email" id="email" class="in" placeholder="Email or Mobile Number"><br>
+            <small id="emailError" class="error"></small><br>
+
+            <input type="password" placeholder="Enter the password" id="password" class="in"><br>
+            <small id="passwordError" class="error"></small><br>
+
+            <button id="btn" class="btn"  onclick=validationform(event)>submit</button><br>
+
+            <h6 class="or">OR</h6><br>
+
+            <button id="codes" class="code">USE A SIGN IN CODE</button><br>
+
+            <a href="#" class="pwd">Forgot Password?</a><br>
+
+            <label for="remember me " class="check"><input type="checkbox">  Remember Me</label>
+
+        </form>
+    </div>
+    <script src="./vali.js"></script>
+</body>
+</html>
+  

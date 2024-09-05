@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="empolyee.css">
+</head>
+<body>
+    <h1>Empolyee ID </h1>
+    <div class="container">
+        <form id="empolyeForm" class="empolyee" onclick="empolye(event)">
+            <label for="name">Emplyee Name</label>
+            <input type="text" id="name1">
+            <label for="">ID Number</label>
+            <input type="text" id="idnum">
+            <button id="btn" onclick="empolye(name, id)">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+    let name=document.getElementById("name1").value;
+    let num=document.getElementById("idnum").value;
+
+    function empolye(name,id){
+
+        name.textContent=name1;
+        num.textContent=idnum;
+
+        console.log(name,idnum);
+        
+    }
+</script>
+</html>
